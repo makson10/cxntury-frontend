@@ -17,5 +17,10 @@ export default defineConfig(({ mode }) => {
 		server: {
 			port: parseInt(env.PORT, 10),
 		},
+		resolve: {
+			alias: {
+				'@': '/src',
+			},
+		},
 	};
 });
